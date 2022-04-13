@@ -89,13 +89,34 @@ class _JogoPPTState extends State<JogoPPT> {
     });
   }
 
+  void _resetaJogo() {
+    setState(() {
+      _imgUserPlayer = "imagens/indefinido.png";
+      _imgAppPlayer = "imagens/indefinido.png";
+
+      _userPoints = 0;
+      _appPoints = 0;
+      _tiePoints = 0;
+
+      _borderUserColor = Colors.transparent;
+      _borderAppColor = Colors.transparent;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Pedra-Papel-Tesoura ;-)"),
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.restart_alt_outlined),
+              tooltip: 'Reseta o placar',
+              onPressed: () => _resetaJogo(),
+            ),
+          ],
         ),
         body: Column(
           children: [
