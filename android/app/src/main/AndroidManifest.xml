@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pedra_papel_tesoura">
    <application
-        android:label="pedra_papel_tesoura"
+        android:label="PPT - Pedra Papel Tesoura"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

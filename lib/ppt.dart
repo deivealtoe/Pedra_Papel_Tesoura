@@ -126,51 +126,9 @@ class _JogoPPTState extends State<JogoPPT> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Column(
-                  children: [
-                    const Text("Você"),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black45, width: 2),
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(7)),
-                      ),
-                      padding: const EdgeInsets.all(35),
-                      child: Text('$_userPoints',
-                          style: const TextStyle(fontSize: 26)),
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    const Text("Empate"),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black45, width: 2),
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(7)),
-                      ),
-                      padding: const EdgeInsets.all(35),
-                      child: Text('$_tiePoints',
-                          style: const TextStyle(fontSize: 26)),
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    const Text("Máquina"),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black45, width: 2),
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(7)),
-                      ),
-                      padding: const EdgeInsets.all(35),
-                      child: Text('$_appPoints',
-                          style: const TextStyle(fontSize: 26)),
-                    ),
-                  ],
-                ),
+                BadgePlacar(nomePlacar: "Você", pontosDoPlacar: _userPoints),
+                BadgePlacar(nomePlacar: "Empate", pontosDoPlacar: _tiePoints),
+                BadgePlacar(nomePlacar: "Máquina", pontosDoPlacar: _appPoints),
               ],
             ),
             const Padding(
@@ -225,6 +183,38 @@ class BadgeBatalha extends StatelessWidget {
         _imgPlayer,
         height: _height,
       ),
+    );
+  }
+}
+
+class BadgePlacar extends StatelessWidget {
+  const BadgePlacar({
+    Key? key,
+    required String nomePlacar,
+    required int pontosDoPlacar,
+  })  : _nomePlacar = nomePlacar,
+        _pontosDoPlacar = pontosDoPlacar;
+
+  final String _nomePlacar;
+  final int _pontosDoPlacar;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(_nomePlacar),
+        Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: Colors.black45, width: 2),
+            borderRadius: const BorderRadius.all(Radius.circular(7)),
+          ),
+          padding: const EdgeInsets.all(35),
+          child: Text(
+            '$_pontosDoPlacar',
+            style: const TextStyle(fontSize: 26),
+          ),
+        ),
+      ],
     );
   }
 }
