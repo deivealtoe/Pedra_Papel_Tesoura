@@ -1,16 +1,19 @@
-# pedra_papel_tesoura
+# Pedra Papel Tesoura ;-)
 
-A new Flutter project.
+Um projeto Flutter 😁🌟🌠
 
-## Getting Started
+## Sobre
 
-This project is a starting point for a Flutter application.
+Este é um incrível jogo de Pedra, Papel Tesoura -> 🪨📜✂️
 
-A few resources to get you started if this is your first Flutter project:
+Seguindo as regras clássicas do jogo 👍
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Basta escolher uma das opções que a jogada é feita ✅
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+No lado esquerdo há a escolha do jogado, no lado direito há a escolha da máquina (aleatória 👀)
+
+Após a escolha, é verificado quem ganhou. Quem ganhou recebe um círculo verde para indicar a vitória e o placar é contabilizado de acordo 🙃
+
+Ahhh e tem um botão de reset do jogo no canto superior direito ✌️✌️
+
+<img src="./github/ezgif-1-c5020d63da.gif" style="height: 650px">
