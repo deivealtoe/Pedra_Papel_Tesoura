@@ -10,7 +10,7 @@ Seguindo as regras clássicas do jogo 👍
 
 Basta escolher uma das opções que a jogada é feita ✅
 
-No lado esquerdo há a escolha do jogado, no lado direito há a escolha da máquina (aleatória 👀)
+No lado esquerdo há a escolha do jogador, no lado direito há a escolha da máquina (aleatória 👀)
 
 Após a escolha, é verificado quem ganhou. Quem ganhou recebe um círculo verde para indicar a vitória e o placar é contabilizado de acordo 🙃
 
